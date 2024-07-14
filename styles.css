@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: orangered;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  
+  header img {
+    height: 50px;
+    margin-right: 10px;
+    padding-right: 10px;
+
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .banner {
+    background-image: url('/img/road-5089188_1280.jpg');
+    background-size: cover;
+    background-position: center;
+
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 40px;
+  }
+
+  .banner h1 {
+    margin-bottom: 50px;
+  }
+
+  
+  .about, .services, .contact, .gallery {
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Espaçamento entre as colunas */
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px; /* Espaçamento interno à direita do texto */
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .about-image {
+        padding: 0;
+    }
+
+    .about-image {
+        margin-top: 20px; /* Espaço entre texto e imagem no modo coluna */
+    }
+}
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  
+
+  .gallery {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.gallery-container {
+    position: relative; /* Permite posicionamento absoluto das imagens */
+    width: 100%; /* Ajuste conforme necessário */
+    height: 400px; /* Defina uma altura fixa */
+    overflow: hidden; /* Oculta imagens fora do contêiner */
+}
+
+.gallery img {
+    width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    position: absolute; /* Sobrepõe as imagens */
+    top: 0; /* Posiciona a imagem no topo */
+    left: 0; /* Posiciona a imagem à esquerda */
+    opacity: 0; /* Oculta todas as imagens inicialmente */
+    transition: opacity 0.5s ease; /* Transição suave ao mudar de imagem */
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+    object-fit: contain; /* Mantém a imagem completa sem cortar */
+}
+
+.gallery img.active {
+  opacity: 1;} /* Somente a imagem ativa é visível */
+
+
+  .gallery button {
+    margin: 10px;
+  }
+
+  .max-width {
+    max-width: 500px;
+    margin: 0 auto;}

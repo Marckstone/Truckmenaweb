@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TruckMe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="img/principal logo.png" alt="TruckMe Logo">
+    
+   
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="banner">
+    <h1>Bem-vindo à TruckMe!</h1>
+    
+    
+  </section>
+  
+  <section class="about">
+    <div class="about-content">
+    <h2>Sobre nós</h2>
+    <p>Nosso compromisso é com a excelência e a satisfação do cliente. Trabalhamos para entender as necessidades específicas de cada cliente, personalizando nossas soluções para atender a diversos segmentos, desde pequenos negócios até grandes corporações.
+<br>    
+    Acreditamos que a transparência e a comunicação são fundamentais. Por isso, disponibilizamos ferramentas que permitem que nossos clientes acompanhem suas entregas em tempo real, garantindo confiança e segurança em cada etapa do processo.
+    </p>
+    <button id="read-more">Leia mais</button>
+</div>
+<div class="about-image">
+<img src="img/Imagem de fundo.png" alt="Caminhão na estrada ">
+
+</div>
+    
+  </section>
+  
+  <section class="services">
+    
+    <h2>Serviços</h2>
+    <div class="max-width">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Preço por km </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carga Geral   </td>
+          <td>Transferência de mercadorias Não perigosas </td>
+          <td>R$50,00</td>
+        </tr>
+        <tr>
+          <td>Carga perigosa</td>
+          <td>Transporte de mercadorias classificadas como perigosas. </td>
+          <td>R$170,00</td>
+        </tr>
+        <tr>
+          <td>Transporte de veículos </td>
+          <td> Transporte de automóveis e outros veículos.</td>
+          <td>R$180</td>
+        </tr>
+        <!-- Mais linhas de serviço -->
+      </tbody>
+    </table>
+  </div>
+  </section>
+  
+  <section class="contact">
+    <h2>Contato</h2>
+    <div class="max-width">
+    <form id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  </section>
+  
+  <section class="gallery">
+    <h2>Galeria</h2>
+    <button id="prev">Anterior</button>
+    <div class="gallery-container">
+    <img src="img/image1.png" alt="Gallery Image">
+    <img src="img/image2.png" alt="Gallery Image">
+    <img src="img/image3.png" alt="Gallery Image">
+    <img src="img/image4.png" alt="Gallery Image">
+    <img src="img/image6.png" alt="Gallery Image">
+    <img src="img/image7.png" alt="Gallery Image">
+    <img src="img/image8.png" alt="Gallery Image">
+  </div>
+    <button id="next">Próximo</button>
+  
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
